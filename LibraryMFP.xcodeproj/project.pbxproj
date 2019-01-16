@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CCCF0AB7E1D5C45DE8606F6 /* Pods_LibraryMFP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LibraryMFP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E4C790A21EF26A1008BE2DE /* LibraryMFP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibraryMFP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E4C790D21EF26A1008BE2DE /* LibraryMFP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryMFP.h; sourceTree = "<group>"; };
 		4E4C790E21EF26A1008BE2DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				4E4C791721EF273D008BE2DE /* IBMMobileFirstPlatformFoundation.framework */,
+				1CCCF0AB7E1D5C45DE8606F6 /* Pods_LibraryMFP.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
