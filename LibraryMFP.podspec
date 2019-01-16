@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
     s.homepage          = 'http://example.com/'
 
     s.author            = { 'Name' => 'Raja Rahul' }
-    s.license           = { :type => 'Apache-2.0', :file => 'LICENSE' }
+    s.license           = { :type => 'MIT', :file => 'LICENSE' }
 
     s.platform          = :ios
     s.source            = { :git => "https://github.com/rajarahul12/LibraryMFP.git",:tag => "1.0.0" }
