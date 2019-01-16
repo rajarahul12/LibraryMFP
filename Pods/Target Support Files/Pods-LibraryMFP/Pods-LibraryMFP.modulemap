@@ -1,0 +1,6 @@
+framework module Pods_LibraryMFP {
+  umbrella header "Pods-LibraryMFP-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,11 @@
+framework module LibraryMFP {
+  umbrella header "LibraryMFP.h"
+
+  export *
+  module * { export * }
+}
+
+module LibraryMFP.Swift {
+    header "LibraryMFP-Swift.h"
+    requires objc
+}

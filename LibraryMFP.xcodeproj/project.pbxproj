@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		4E4C790F21EF26A1008BE2DE /* LibraryMFP.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E4C790D21EF26A1008BE2DE /* LibraryMFP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E4C791621EF26CF008BE2DE /* LibraryMFP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4C791521EF26CF008BE2DE /* LibraryMFP.swift */; };
+		4E4C791821EF273D008BE2DE /* IBMMobileFirstPlatformFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4C791721EF273D008BE2DE /* IBMMobileFirstPlatformFoundation.framework */; };
+		4E4C791A21EF2868008BE2DE /* mfpclient.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E4C791921EF2868008BE2DE /* mfpclient.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4E4C790A21EF26A1008BE2DE /* LibraryMFP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibraryMFP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E4C790D21EF26A1008BE2DE /* LibraryMFP.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryMFP.h; sourceTree = "<group>"; };
 		4E4C790E21EF26A1008BE2DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E4C791521EF26CF008BE2DE /* LibraryMFP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryMFP.swift; sourceTree = "<group>"; };
+		4E4C791721EF273D008BE2DE /* IBMMobileFirstPlatformFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IBMMobileFirstPlatformFoundation.framework; path = Pods/IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation/Frameworks/IBMMobileFirstPlatformFoundation.framework; sourceTree = "<group>"; };
+		4E4C791921EF2868008BE2DE /* mfpclient.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mfpclient.plist; sourceTree = SOURCE_ROOT; };
+		881331CF45EAB9B029E4EB6D /* Pods-LibraryMFP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibraryMFP.release.xcconfig"; path = "Pods/Target Support Files/Pods-LibraryMFP/Pods-LibraryMFP.release.xcconfig"; sourceTree = "<group>"; };
+		9F522BDA505F7B06B0A6EA50 /* Pods-LibraryMFP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibraryMFP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LibraryMFP/Pods-LibraryMFP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E4C791821EF273D008BE2DE /* IBMMobileFirstPlatformFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +41,8 @@
 			children = (
 				4E4C790C21EF26A1008BE2DE /* LibraryMFP */,
 				4E4C790B21EF26A1008BE2DE /* Products */,
+				F40811CD74CDC3C89C57BB42 /* Pods */,
+				ACBD4C13B91A807A0A4543A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +57,29 @@
 		4E4C790C21EF26A1008BE2DE /* LibraryMFP */ = {
 			isa = PBXGroup;
 			children = (
+				4E4C791921EF2868008BE2DE /* mfpclient.plist */,
 				4E4C790D21EF26A1008BE2DE /* LibraryMFP.h */,
 				4E4C790E21EF26A1008BE2DE /* Info.plist */,
+				4E4C791521EF26CF008BE2DE /* LibraryMFP.swift */,
 			);
 			path = LibraryMFP;
+			sourceTree = "<group>";
+		};
+		ACBD4C13B91A807A0A4543A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E4C791721EF273D008BE2DE /* IBMMobileFirstPlatformFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F40811CD74CDC3C89C57BB42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9F522BDA505F7B06B0A6EA50 /* Pods-LibraryMFP.debug.xcconfig */,
+				881331CF45EAB9B029E4EB6D /* Pods-LibraryMFP.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,10 +100,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E4C791221EF26A1008BE2DE /* Build configuration list for PBXNativeTarget "LibraryMFP" */;
 			buildPhases = (
+				131335BE99A70815279F29C9 /* [CP] Check Pods Manifest.lock */,
 				4E4C790521EF26A1008BE2DE /* Headers */,
 				4E4C790621EF26A1008BE2DE /* Sources */,
 				4E4C790721EF26A1008BE2DE /* Frameworks */,
 				4E4C790821EF26A1008BE2DE /* Resources */,
+				CA1C6298B17421907543715E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -95,6 +127,7 @@
 				TargetAttributes = {
 					4E4C790921EF26A1008BE2DE = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -120,16 +153,65 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E4C791A21EF2868008BE2DE /* mfpclient.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		131335BE99A70815279F29C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LibraryMFP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA1C6298B17421907543715E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LibraryMFP/Pods-LibraryMFP-resources.sh",
+				"${PODS_ROOT}/IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation/Resources/Localizations.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Localizations.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LibraryMFP/Pods-LibraryMFP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4E4C790621EF26A1008BE2DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E4C791621EF26CF008BE2DE /* LibraryMFP.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,13 +342,19 @@
 		};
 		4E4C791321EF26A1008BE2DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F522BDA505F7B06B0A6EA50 /* Pods-LibraryMFP.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation/Frameworks",
+				);
 				INFOPLIST_FILE = LibraryMFP/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -277,6 +365,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = in.ibm.com.LibraryMFP;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,13 +373,19 @@
 		};
 		4E4C791421EF26A1008BE2DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 881331CF45EAB9B029E4EB6D /* Pods-LibraryMFP.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/IBMMobileFirstPlatformFoundation/IBMMobileFirstPlatformFoundation/Frameworks",
+				);
 				INFOPLIST_FILE = LibraryMFP/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
